@@ -4,6 +4,7 @@
 //  License: MIT (see LICENCE files for details)
 
 import Foundation
+import CoreFoundation
 #if os(Linux)
 import Glibc
 #else
