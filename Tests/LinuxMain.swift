@@ -9,5 +9,5 @@ import XCTest
 import UnicodeURLTests
 
 var tests = [XCTestCaseEntry]()
-tests += UnicodeURLTests.allTests()
+tests += UnicodeURLTests.allTests
 XCTMain(tests)
