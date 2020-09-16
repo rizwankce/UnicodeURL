@@ -4,10 +4,5 @@
 //  License: MIT (see LICENCE files for details)
 
 import Foundation
-import XCTest
 
-import UnicodeURLTests
-
-var tests = [XCTestCaseEntry]()
-tests += UnicodeURLTests.allTests()
-XCTMain(tests)
+fatalError("Running tests like this is unsupported. Run the tests again by using `swift test --enable-test-discovery`")
