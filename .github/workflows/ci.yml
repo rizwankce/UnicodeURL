@@ -19,7 +19,7 @@ jobs:
 
       strategy:
         matrix:
-          swift: ["5.2"]
+          swift: ["5.1","5.2"]
 
       container:
         image: swift:${{ matrix.swift }}
@@ -27,5 +27,7 @@ jobs:
       steps:
         - name: Checkout
           uses: actions/checkout@v1
-        - name: Build and Test
+        - name: Build
+          run: swift build
+        - name: Test
           run: swift test --enable-test-discovery
